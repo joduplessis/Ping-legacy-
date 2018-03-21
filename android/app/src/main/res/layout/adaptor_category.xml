@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF">
+
+    <CheckBox
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/icon_checked"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:background="@drawable/checkbox_default"
+        android:textColor="#FFFFFFFF"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Category"
+        android:id="@+id/category_label"
+        android:layout_margin="20dp"
+        android:textSize="14dp"
+        android:textColor="#FF8f8d82" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="5 pings"
+        android:id="@+id/category_count"
+        android:layout_margin="20dp"
+        android:textSize="12dp"
+        android:textColor="#FFbbb8ab"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

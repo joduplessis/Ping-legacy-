@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="#FFFFFFFF">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="07:30"
+            android:id="@+id/ping_time"
+            android:textColor="#ff8f8d82"
+            android:layout_marginLeft="20dp"
+            android:textSize="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Go to the gym!"
+            android:id="@+id/ping_title"
+            android:textColor="#FFba4f56"
+            android:textSize="14dp"
+            android:layout_below="@+id/ping_time"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="3hrs"
+            android:id="@+id/ping_timeremaining"
+            android:textSize="12dp"
+            android:textColor="#FFFFFFFF"
+            android:background="@drawable/adaptor_ping_timeremaining_background"
+            android:layout_below="@+id/ping_time"
+            android:layout_toEndOf="@+id/ping_title"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="TWTF"
+        android:id="@+id/ping_days"
+        android:textSize="10dp"
+        android:textColor="#FFbbb8ab"
+        android:layout_toStartOf="@+id/ping_days_icon"
+        android:layout_alignTop="@+id/ping_days_icon"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/ping_days_icon"
+        android:layout_below="@+id/ping_timeremaining"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ping_list_icon_refresh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="tagged by @jo_duplessis"
+        android:id="@+id/ping_tagged"
+        android:layout_alignParentBottom="false"
+        android:textColor="#FFbbb8ab"
+        android:textSize="10dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignTop="@+id/ping_tagged_icon"
+        android:layout_toStartOf="@+id/ping_tagged_icon"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/ping_tagged_icon"
+        android:layout_toStartOf="@+id/ping_days"
+        android:layout_alignTop="@+id/ping_days"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ping_list_icon_user" />
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/ping_friend_list"
+        >
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

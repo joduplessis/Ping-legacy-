@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#FFFFFFFF">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sound name"
+        android:id="@+id/button_label"
+        android:textSize="14dp"
+        android:textColor="#FF8f8d82"
+        android:layout_marginLeft="10dp"
+        android:background="#00FFFFFF"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/button_play"
+        android:background="@drawable/play"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+
+</RelativeLayout>

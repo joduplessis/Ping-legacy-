@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Login theme. -->
+    <style name="LoginTheme" parent="android:Theme.Holo">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">0dp</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#FF1996cb</item>
+
+    </style>
+
+
+    <style name="MyActionBarProfile" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#FFFFFFFF</item>
+    </style>
+
+</resources>

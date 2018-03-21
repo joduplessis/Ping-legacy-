@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        font-family: "Helvetica Neue", "Arial", "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 0.8em;
+        background: #f2f0f2;
+      }
+        .login {
+          text-align: center;
+          width: 400px;
+        }
+          .login h1 {
+            color: #e14b53;
+          }
+          .login p {
+
+          }
+          .login form {
+
+          }
+            .login form textarea {
+              font-size: 1.4em;
+              border-radius: 5px;
+              border-color: #DDD;
+              color: #AAA;
+            }
+            .login form input {
+              background: #e14b53;
+              color: #f2f0f2;
+              border: 0px;
+              padding: 10px;
+              font-size: 1.4em;
+              border-radius: 5px;
+            }
+        .nextping {
+          text-align: center;
+          background: #f2f0f2;
+          color: #e14b53;
+          width: 400px;
+        }
+         .nextping .padding {
+           background: #e14b53;
+           color: #f2f0f2;
+           text-align: left;
+           padding: 10px;
+           border-radius: 5px;
+         }
+          .nextping .padding img {
+            float: left;
+            width: 30px;
+            height: 40px;
+            display:block;
+            margin-right:10px;
+            position:relative;
+            top: 3px;
+          }
+          .nextping .padding h1 {
+            margin: 0px;
+            padding: 0px;
+          }
+          .nextping .padding h2 {
+            margin: 0px;
+            padding: 0px;
+            font-weight: normal;
+            font-size: 16px;
+          }
+          .nextping a#logout {
+            text-decoration: none;
+            display:block;
+            text-align:center;
+            color: #e14b53;
+            padding:20px;
+            padding-bottom: 10px;
+            font-weight: bold;
+          }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="nextping" id="nextping"></div>
+    <div class="login" id="login">
+      <img src="logo.png" />
+      <h1>Connect your Ping account</h1>
+      <p>Just copy and paste your unique token that you get from your app.</p>
+      <img src="loading.gif" id="loading"/>
+      <form id="form" action="#" method="GET">
+        <textarea cols="30" rows="5" id="token"></textarea>
+        <br/>
+        <input type="submit" value="Connect" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>

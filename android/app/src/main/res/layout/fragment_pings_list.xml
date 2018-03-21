@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_general"
+    android:id="@+id/pings_list_layout"
+    tools:context="com.robotmonsterlabs.ping.fragments.FragmentPingsList">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pings_list"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:dividerHeight="1px"
+        android:divider="#FFDDDDDD" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFf8cd68"
+        android:id="@+id/pings_categories">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/pings_category">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:id="@+id/category_title"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="5dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/category_count"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/category_title"
+                android:background="@drawable/pings_list_categorycount_background_active"
+                android:textColor="#FFe6c658"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

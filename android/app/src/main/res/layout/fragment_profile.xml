@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_orange"
+    android:layout_height="match_parent"
+    android:id="@+id/user_layout"
+    tools:context="com.robotmonsterlabs.ping.fragments.FragmentProfile">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/user_badge_background"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/profile_badge_background"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/user_badge"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="30dp"
+        android:id="@+id/user_name"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFefe1cc"
+        android:layout_below="@+id/user_badge_background"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="This is John Doe status message"
+        android:textSize="14dp"
+        android:id="@+id/user_status"
+        android:layout_below="@+id/user_name"
+        android:textColor="#FFefe1cc"
+        android:paddingBottom="20dp"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal" />
+
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Simply tap your profile badge to change it. Press on your name to change it."
+        android:textSize="12dp"
+        android:id="@+id/user_tip"
+        android:paddingLeft="20dp"
+        android:textColor="#FFf8ce6a"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/user_status"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

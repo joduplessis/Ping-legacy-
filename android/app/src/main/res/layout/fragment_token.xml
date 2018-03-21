@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_orange"
+    android:layout_height="match_parent"
+    android:id="@+id/user_layout"
+    tools:context="com.robotmonsterlabs.ping.fragments.FragmentToken">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Token"
+        android:textSize="30dp"
+        android:id="@+id/heading"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textColor="#FFefe1cc"
+        android:layout_below="@+id/user_badge_background"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp" />
+
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Use this code to connect the Chrome Extension to the app - get access to your Pings from your browser. (coming soon)"
+        android:textSize="14dp"
+        android:id="@+id/subheading"
+        android:textColor="#FFefe1cc"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_below="@+id/heading"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="20dp"
+        android:id="@+id/paragraph"
+        android:textColor="#FFf8ce6a"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_below="@+id/subheading"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

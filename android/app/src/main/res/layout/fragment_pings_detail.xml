@@ -1,0 +1,550 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.robotmonsterlabs.ping.fragments.FragmentPingsDetail"
+    android:background="@drawable/background_general">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/settings_list_container">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFDDDDDD"
+                android:orientation="vertical"
+                android:id="@+id/settings_list">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="20dp"
+                    android:id="@+id/ping_friends"
+                    android:background="#FF59424f">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add more friends"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:id="@+id/button_add_friends"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="12dp"
+                        android:background="@android:color/transparent"
+                        android:padding="20dp"
+                        android:textColor="#FF9b738a" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setting_time"
+                    android:layout_marginBottom="1dp"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Time"
+                        android:id="@+id/setting_time_label"
+                        android:layout_margin="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#FF8f8d82" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="..."
+                        android:id="@+id/setting_time_value"
+                        android:layout_margin="20dp"
+                        android:textSize="12dp"
+                        android:textColor="#FFbbb8ab"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/setting_days"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Days"
+                        android:id="@+id/setting_days_label"
+                        android:layout_margin="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#FF8f8d82" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="..."
+                        android:id="@+id/setting_days_value"
+                        android:layout_margin="20dp"
+                        android:textSize="12dp"
+                        android:textColor="#FFbbb8ab"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/setting_title"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Title"
+                        android:id="@+id/setting_title_label"
+                        android:layout_margin="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#FF8f8d82" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="..."
+                        android:id="@+id/setting_title_value"
+                        android:layout_margin="20dp"
+                        android:textSize="12dp"
+                        android:textColor="#FFbbb8ab"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/setting_category"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Category"
+                        android:id="@+id/setting_category_label"
+                        android:layout_margin="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#FF8f8d82" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="..."
+                        android:id="@+id/setting_category_value"
+                        android:layout_margin="20dp"
+                        android:textSize="12dp"
+                        android:textColor="#FFbbb8ab"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/setting_sound"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sound"
+                        android:id="@+id/setting_sound_label"
+                        android:layout_margin="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#FF8f8d82" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="..."
+                        android:id="@+id/setting_sound_value"
+                        android:layout_margin="20dp"
+                        android:textSize="12dp"
+                        android:textColor="#FFbbb8ab"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/setting_fadein"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Fade in"
+                        android:id="@+id/setting_fadein_label"
+                        android:layout_margin="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#FF8f8d82" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="..."
+                        android:id="@+id/setting_fadein_value"
+                        android:layout_margin="20dp"
+                        android:textSize="12dp"
+                        android:textColor="#FFbbb8ab"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                    <SeekBar
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/setting_fadein_value_seekbar"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="50"
+                        android:layout_toStartOf="@+id/setting_fadein_value"
+                        android:layout_toEndOf="@+id/setting_fadein_label"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/setting_repeats"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Repeats weekly"
+                        android:id="@+id/setting_repeats_label"
+                        android:layout_margin="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#FF8f8d82" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/setting_repeats_value"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/setting_enabled"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Enabled"
+                        android:id="@+id/setting_enabled_label"
+                        android:layout_margin="20dp"
+                        android:textSize="14dp"
+                        android:textColor="#FF8f8d82" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/setting_enabled_value"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/ping_update"
+                    android:background="@drawable/ui_button_yellow"
+                    android:textColor="#ffffffff"
+                    android:text="Save"
+                    android:layout_margin="10dp">
+                </Button>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup_opacity_background"
+        android:id="@+id/days_selector_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/days_selector_list"
+            android:background="@drawable/days_selector_background"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF59424f"
+                android:id="@+id/day_sunday" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF59424f"
+                android:id="@+id/day_monday" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF59424f"
+                android:id="@+id/day_tuesday" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF59424f"
+                android:id="@+id/day_wednesday" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF59424f"
+                android:id="@+id/day_thursday" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF59424f"
+                android:id="@+id/day_friday" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF59424f"
+                android:id="@+id/day_saturday" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/day_update"
+                android:background="@drawable/ui_button_yellow"
+                android:textColor="#ffffffff"
+                android:text="Update"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup_opacity_background"
+        android:id="@+id/time_selector_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/time_selector_list"
+            android:background="@drawable/days_selector_background"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp">
+
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#985562"
+                android:id="@+id/timePicker" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/time_update"
+                android:background="@drawable/ui_button_yellow"
+                android:textColor="#ffffffff"
+                android:text="Update"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup_opacity_background"
+        android:id="@+id/friends_selector_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/friends_selector_list"
+            android:background="@drawable/days_selector_background"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:id="@+id/friends_selector_listview">
+
+            </ListView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/friends_update"
+                android:background="@drawable/ui_button_yellow"
+                android:textColor="#ffffffff"
+                android:text="Close"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup_opacity_background"
+        android:id="@+id/category_selector_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/category_selector_list"
+            android:background="@drawable/days_selector_background"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:id="@+id/category_selector_listview">
+
+            </ListView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/category_update"
+                android:background="@drawable/ui_button_yellow"
+                android:textColor="#ffffffff"
+                android:text="Close"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup_opacity_background"
+        android:id="@+id/sound_selector_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sound_selector_list"
+            android:background="@drawable/days_selector_background"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/sound_selector_listview">
+            </ListView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/sound_update"
+                android:background="@drawable/ui_button_yellow"
+                android:textColor="#ffffffff"
+                android:text="Close"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

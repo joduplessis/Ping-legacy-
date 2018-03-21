@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pings">#ffc8555d</color>
+    <color name="categories">#ff5e7e8a</color>
+    <color name="friends">#ff1997cc</color>
+    <color name="invites">#fff99f57</color>
+    <color name="profile">#ffbddd59</color>
+    <color name="token">#ffbddd59</color>
+</resources>

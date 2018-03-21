@@ -1,0 +1,128 @@
+<tools:android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context="com.robotmonsterlabs.ping.ActivityDrawer">
+
+    <!-- Seems there can only be 3 elements under this view -->
+    <!-- The main view, left drawer & right drawer -->
+
+    <!-- The main content view -->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- The navigation drawer -->
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="#FFFFFFFF"
+        android:id="@+id/drawer_linear_layout">
+
+        <RelativeLayout
+            android:id="@+id/drawer_container"
+            android:layout_width="match_parent"
+            android:background="#FFFFFFFF"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/drawer_header"
+                android:layout_width="match_parent"
+                android:background="#FFa74f57"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/drawer_badge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Jo du Plessis"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textColor="#FFfffded"
+                    android:id="@+id/drawer_username"
+                    android:layout_alignTop="@+id/drawer_badge"
+                    android:layout_alignLeft="@+id/drawer_badge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="This is my status"
+                    android:textSize="12dp"
+                    android:textColor="#FFfffded"
+                    android:id="@+id/drawer_userstatus"
+                    android:layout_below="@+id/drawer_username"
+                    android:layout_alignStart="@+id/drawer_username" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drawer_list"
+                android:clickable="true"
+                android:choiceMode="singleChoice"
+                android:layout_below="@+id/drawer_header"
+                android:layout_alignParentStart="true">
+
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/drawer_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Help"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/drawer_help"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp"
+                    android:textSize="10dp"
+                    android:textColor="#FFa74f57" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="Logout"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/drawer_logout"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:textSize="10dp"
+                    android:textColor="#FFa74f57"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</tools:android.support.v4.widget.DrawerLayout>

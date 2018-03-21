@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@drawable/background_red"
+    tools:context="com.robotmonsterlabs.ping.ActivityTrigger">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pull down to snooze"
+        android:textColor="#FFf58975"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:background="#00000000"
+        android:id="@+id/button_snooze"
+        android:textSize="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/sound_onoff"
+        android:background="#00000000"
+        android:layout_below="@+id/text_title"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friends_snooze"
+        android:layout_below="@+id/sound_onoff"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/drag_target" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/drag_target"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/snooze" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:lineSpacingMultiplier="0.75"
+        android:textAllCaps="true"
+        android:textColor="#FFf6e3d6"
+        android:id="@+id/text_title"
+        android:textSize="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/button_snooze"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- General -->
+
+    <string name="app_name">Ping</string>
+    <string name="website_url">http://www.robotmonsterlabs.com/ping</string>
+    <string name="api_url">http://46.101.59.60:3001</string>
+
+    <!-- Toast messages -->
+
+    <string name="toast_error">Sorry, there\'s been an error.</string>
+    <string name="toast_login">Just a sec, logging you in.</string>
+    <string name="toast_logout">Just a sec, logging you out.</string>
+    <string name="toast_updated">Successfully updated.</string>
+    <string name="toast_created">Successfully created.</string>
+    <string name="toast_please_login">Oh, please log in.</string>
+    <string name="toast_ping_invite_created">Successfully sent invite.</string>
+    <string name="toast_ping_invite_deleted">Successfully deleted invite.</string>
+    <string name="toast_ping_category_updated">Successfully updated category.</string>
+    <string name="toast_ping_sound_updated">Successfully updated sound.</string>
+    <string name="toast_ping_nonowner">Sorry, you need to be the owner of this Ping.</string>
+
+    <!-- Badge array -->
+
+    <string-array name="badges_array">
+        <item>badge_android</item>
+        <item>badge_book</item>
+        <item>badge_default</item>
+        <item>badge_disk</item>
+        <item>badge_drive</item>
+        <item>badge_mac</item>
+        <item>badge_sock</item>
+    </string-array>
+
+    <!-- Sound array -->
+
+    <string-array name="sound_array">
+        <item>alarm_one</item>
+    </string-array>
+
+    <!-- Drawer activity -->
+
+    <string-array name="drawer_array">
+        <item>Pings</item>
+        <item>Categories</item>
+        <item>Friends</item>
+        <item>Invites</item>
+        <item>Profile</item>
+        <item>Token</item>
+    </string-array>
+
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Facebook SDK -->
+
+    <string name="facebook_app_id">1671087846457852</string>
+
+    <!-- Buttons -->
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add">Add</string>
+    <string name="action_back">Back</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="button_friend_invite">INVITE</string>
+    <string name="button_friend_invited">INVITED</string>
+    <string name="button_friend_uninvite">UN-INVITE</string>
+    <string name="button_friend_uninvited">UN-INVITED</string>
+
+    <!-- ListView placeholders -->
+
+    <string name="friend_badge_contentdescription">Default badge image for friend.</string>
+    <string name="friend_name_placeholder">John Doe</string>
+    <string name="friend_status_placeholder">John Does status line message!</string>
+
+    <!-- Titles -->
+
+    <string name="title_activity_login">Ping</string>
+    <string name="title_activity_app">Ping</string>
+    <string name="title_activity_drawer">Ping</string>
+    <string name="title_activity_trigger">Ping</string>
+    <string name="title_activity_navigation_drawer">Ping</string>
+
+</resources>

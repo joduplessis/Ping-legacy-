@@ -1,0 +1,562 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'socket.io' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose cache add [ 'socket.io', null ]
+5 verbose cache add name=undefined spec="socket.io" args=["socket.io",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'socket.io',
+6 verbose parsed url   path: 'socket.io',
+6 verbose parsed url   href: 'socket.io' }
+7 silly lockFile 71475bfd-socket-io socket.io
+8 verbose lock socket.io /Users/joduplessis/.npm/71475bfd-socket-io.lock
+9 silly lockFile 71475bfd-socket-io socket.io
+10 silly lockFile 71475bfd-socket-io socket.io
+11 verbose addNamed [ 'socket.io', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile c03de861-socket-io socket.io@
+14 verbose lock socket.io@ /Users/joduplessis/.npm/c03de861-socket-io.lock
+15 silly addNameRange { name: 'socket.io', range: '*', hasData: false }
+16 verbose request where is /socket.io
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 7c052de060d25e96
+19 verbose url raw /socket.io
+20 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+21 verbose url resolved https://registry.npmjs.org/socket.io
+22 verbose request where is https://registry.npmjs.org/socket.io
+23 info trying registry request attempt 1 at 10:02:49
+24 verbose etag "AMMVK86UBT0I3IZIPQEWKX89C"
+25 http GET https://registry.npmjs.org/socket.io
+26 http 304 https://registry.npmjs.org/socket.io
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Sun, 26 Jul 2015 08:02:50 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"AMMVK86UBT0I3IZIPQEWKX89C"',
+27 silly registry.get     age: '32',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-lhr6328-LHR',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '32',
+27 silly registry.get     'x-timer': 'S1437897770.188755,VS0,VE0',
+27 silly registry.get     vary: 'Accept' } ]
+28 verbose etag https://registry.npmjs.org/socket.io from cache
+29 silly addNameRange number 2 { name: 'socket.io', range: '*', hasData: true }
+30 silly addNameRange versions [ 'socket.io',
+30 silly addNameRange   [ '0.3.8',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1',
+30 silly addNameRange     '0.5.1',
+30 silly addNameRange     '0.5.3',
+30 silly addNameRange     '0.6.0',
+30 silly addNameRange     '0.6.1',
+30 silly addNameRange     '0.6.3',
+30 silly addNameRange     '0.6.4',
+30 silly addNameRange     '0.6.5',
+30 silly addNameRange     '0.6.6',
+30 silly addNameRange     '0.6.7',
+30 silly addNameRange     '0.6.8',
+30 silly addNameRange     '0.6.9',
+30 silly addNameRange     '0.6.10',
+30 silly addNameRange     '0.6.11',
+30 silly addNameRange     '0.6.12',
+30 silly addNameRange     '0.6.14',
+30 silly addNameRange     '0.6.15',
+30 silly addNameRange     '0.6.16',
+30 silly addNameRange     '0.6.17',
+30 silly addNameRange     '0.6.18',
+30 silly addNameRange     '0.7.0',
+30 silly addNameRange     '0.7.1',
+30 silly addNameRange     '0.7.2',
+30 silly addNameRange     '0.7.3',
+30 silly addNameRange     '0.7.4',
+30 silly addNameRange     '0.7.5',
+30 silly addNameRange     '0.7.6',
+30 silly addNameRange     '0.7.7',
+30 silly addNameRange     '0.7.8',
+30 silly addNameRange     '0.7.9',
+30 silly addNameRange     '0.7.10',
+30 silly addNameRange     '0.7.11',
+30 silly addNameRange     '0.8.0',
+30 silly addNameRange     '0.8.1',
+30 silly addNameRange     '0.8.2',
+30 silly addNameRange     '0.8.3',
+30 silly addNameRange     '0.8.4',
+30 silly addNameRange     '0.8.5',
+30 silly addNameRange     '0.8.6',
+30 silly addNameRange     '0.8.7',
+30 silly addNameRange     '0.9.0',
+30 silly addNameRange     '0.9.1',
+30 silly addNameRange     '0.9.1-1',
+30 silly addNameRange     '0.9.2',
+30 silly addNameRange     '0.9.3',
+30 silly addNameRange     '0.9.4',
+30 silly addNameRange     '0.9.5',
+30 silly addNameRange     '0.9.6',
+30 silly addNameRange     '0.9.7',
+30 silly addNameRange     '0.9.8',
+30 silly addNameRange     '0.9.9',
+30 silly addNameRange     '0.9.10',
+30 silly addNameRange     '0.9.11',
+30 silly addNameRange     '0.9.12',
+30 silly addNameRange     '0.9.13',
+30 silly addNameRange     '0.9.14',
+30 silly addNameRange     '0.9.15',
+30 silly addNameRange     '0.9.16',
+30 silly addNameRange     '1.0.0-pre',
+30 silly addNameRange     '1.0.0-pre2',
+30 silly addNameRange     '1.0.0-pre3',
+30 silly addNameRange     '1.0.0-pre4',
+30 silly addNameRange     '1.0.0-pre5',
+30 silly addNameRange     '0.9.17',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.0.1',
+30 silly addNameRange     '1.0.2',
+30 silly addNameRange     '1.0.3',
+30 silly addNameRange     '1.0.4',
+30 silly addNameRange     '1.0.5',
+30 silly addNameRange     '1.0.6',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '1.2.0',
+30 silly addNameRange     '1.2.1',
+30 silly addNameRange     '1.3.0',
+30 silly addNameRange     '1.3.1',
+30 silly addNameRange     '1.3.2',
+30 silly addNameRange     '1.3.3',
+30 silly addNameRange     '1.3.4',
+30 silly addNameRange     '1.3.5',
+30 silly addNameRange     '1.3.6' ] ]
+31 verbose addNamed [ 'socket.io', '1.3.6' ]
+32 verbose addNamed [ '1.3.6', '1.3.6' ]
+33 silly lockFile 79923448-socket-io-1-3-6 socket.io@1.3.6
+34 verbose lock socket.io@1.3.6 /Users/joduplessis/.npm/79923448-socket-io-1-3-6.lock
+35 silly lockFile 79923448-socket-io-1-3-6 socket.io@1.3.6
+36 silly lockFile 79923448-socket-io-1-3-6 socket.io@1.3.6
+37 silly lockFile c03de861-socket-io socket.io@
+38 silly lockFile c03de861-socket-io socket.io@
+39 silly resolved [ { name: 'socket.io',
+39 silly resolved     version: '1.3.6',
+39 silly resolved     description: 'node.js realtime framework server',
+39 silly resolved     keywords:
+39 silly resolved      [ 'realtime',
+39 silly resolved        'framework',
+39 silly resolved        'websocket',
+39 silly resolved        'tcp',
+39 silly resolved        'events',
+39 silly resolved        'socket',
+39 silly resolved        'io' ],
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git://github.com/Automattic/socket.io.git' },
+39 silly resolved     scripts: { test: 'mocha --reporter dot --slow 200ms --bail' },
+39 silly resolved     dependencies:
+39 silly resolved      { 'engine.io': '1.5.2',
+39 silly resolved        'socket.io-parser': '2.2.4',
+39 silly resolved        'socket.io-client': '1.3.6',
+39 silly resolved        'socket.io-adapter': '0.3.1',
+39 silly resolved        'has-binary-data': '0.1.3',
+39 silly resolved        debug: '2.1.0' },
+39 silly resolved     devDependencies:
+39 silly resolved      { mocha: '1.16.2',
+39 silly resolved        'expect.js': '0.3.1',
+39 silly resolved        supertest: '0.8.2',
+39 silly resolved        superagent: '0.17.0',
+39 silly resolved        istanbul: '0.2.3' },
+39 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+39 silly resolved     gitHead: '3e4061bfef1fa0c387657ec81325c068a2cea132',
+39 silly resolved     bugs: { url: 'https://github.com/Automattic/socket.io/issues' },
+39 silly resolved     homepage: 'https://github.com/Automattic/socket.io#readme',
+39 silly resolved     _id: 'socket.io@1.3.6',
+39 silly resolved     _shasum: '1ef8ec4d8edea6499c8febd2a16b6d15b4dc15bd',
+39 silly resolved     _from: 'socket.io@',
+39 silly resolved     _npmVersion: '2.8.3',
+39 silly resolved     _nodeVersion: '0.12.2',
+39 silly resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     dist:
+39 silly resolved      { shasum: '1ef8ec4d8edea6499c8febd2a16b6d15b4dc15bd',
+39 silly resolved        tarball: 'http://registry.npmjs.org/socket.io/-/socket.io-1.3.6.tgz' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/socket.io/-/socket.io-1.3.6.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install socket.io@1.3.6 into /usr/local/lib
+41 info installOne socket.io@1.3.6
+42 verbose lib/node_modules/socket.io unbuild
+43 verbose tar unpack /Users/joduplessis/.npm/socket.io/1.3.6/package.tgz
+44 silly lockFile 33051dcf-local-lib-node-modules-socket-io tar:///usr/local/lib/node_modules/socket.io
+45 verbose lock tar:///usr/local/lib/node_modules/socket.io /Users/joduplessis/.npm/33051dcf-local-lib-node-modules-socket-io.lock
+46 silly lockFile 8337b061--npm-socket-io-1-3-6-package-tgz tar:///Users/joduplessis/.npm/socket.io/1.3.6/package.tgz
+47 verbose lock tar:///Users/joduplessis/.npm/socket.io/1.3.6/package.tgz /Users/joduplessis/.npm/8337b061--npm-socket-io-1-3-6-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 silly gunzTarPerm extractEntry package.json
+50 silly gunzTarPerm extractEntry .npmignore
+51 silly gunzTarPerm extractEntry LICENSE
+52 silly gunzTarPerm extractEntry index.js
+53 silly gunzTarPerm extractEntry .travis.yml
+54 silly gunzTarPerm extractEntry History.md
+55 silly gunzTarPerm extractEntry Makefile
+56 silly gunzTarPerm extractEntry Readme.md
+57 silly gunzTarPerm extractEntry lib/client.js
+58 silly gunzTarPerm extractEntry lib/index.js
+59 silly gunzTarPerm extractEntry lib/namespace.js
+60 silly gunzTarPerm extractEntry lib/socket.js
+61 silly lockFile 33051dcf-local-lib-node-modules-socket-io tar:///usr/local/lib/node_modules/socket.io
+62 silly lockFile 33051dcf-local-lib-node-modules-socket-io tar:///usr/local/lib/node_modules/socket.io
+63 silly lockFile 8337b061--npm-socket-io-1-3-6-package-tgz tar:///Users/joduplessis/.npm/socket.io/1.3.6/package.tgz
+64 silly lockFile 8337b061--npm-socket-io-1-3-6-package-tgz tar:///Users/joduplessis/.npm/socket.io/1.3.6/package.tgz
+65 info preinstall socket.io@1.3.6
+66 verbose readDependencies using package.json deps
+67 verbose readDependencies using package.json deps
+68 verbose cache add [ 'engine.io@1.5.2', null ]
+69 verbose cache add name=undefined spec="engine.io@1.5.2" args=["engine.io@1.5.2",null]
+70 verbose parsed url { protocol: null,
+70 verbose parsed url   slashes: null,
+70 verbose parsed url   auth: null,
+70 verbose parsed url   host: null,
+70 verbose parsed url   port: null,
+70 verbose parsed url   hostname: null,
+70 verbose parsed url   hash: null,
+70 verbose parsed url   search: null,
+70 verbose parsed url   query: null,
+70 verbose parsed url   pathname: 'engine.io@1.5.2',
+70 verbose parsed url   path: 'engine.io@1.5.2',
+70 verbose parsed url   href: 'engine.io@1.5.2' }
+71 verbose cache add [ 'socket.io-parser@2.2.4', null ]
+72 verbose cache add name=undefined spec="socket.io-parser@2.2.4" args=["socket.io-parser@2.2.4",null]
+73 verbose parsed url { protocol: null,
+73 verbose parsed url   slashes: null,
+73 verbose parsed url   auth: null,
+73 verbose parsed url   host: null,
+73 verbose parsed url   port: null,
+73 verbose parsed url   hostname: null,
+73 verbose parsed url   hash: null,
+73 verbose parsed url   search: null,
+73 verbose parsed url   query: null,
+73 verbose parsed url   pathname: 'socket.io-parser@2.2.4',
+73 verbose parsed url   path: 'socket.io-parser@2.2.4',
+73 verbose parsed url   href: 'socket.io-parser@2.2.4' }
+74 verbose cache add name="engine.io" spec="1.5.2" args=["engine.io","1.5.2"]
+75 verbose parsed url { protocol: null,
+75 verbose parsed url   slashes: null,
+75 verbose parsed url   auth: null,
+75 verbose parsed url   host: null,
+75 verbose parsed url   port: null,
+75 verbose parsed url   hostname: null,
+75 verbose parsed url   hash: null,
+75 verbose parsed url   search: null,
+75 verbose parsed url   query: null,
+75 verbose parsed url   pathname: '1.5.2',
+75 verbose parsed url   path: '1.5.2',
+75 verbose parsed url   href: '1.5.2' }
+76 verbose addNamed [ 'engine.io', '1.5.2' ]
+77 verbose addNamed [ '1.5.2', '1.5.2' ]
+78 silly lockFile 60feb9f1-engine-io-1-5-2 engine.io@1.5.2
+79 verbose lock engine.io@1.5.2 /Users/joduplessis/.npm/60feb9f1-engine-io-1-5-2.lock
+80 verbose cache add [ 'socket.io-client@1.3.6', null ]
+81 verbose cache add name=undefined spec="socket.io-client@1.3.6" args=["socket.io-client@1.3.6",null]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: 'socket.io-client@1.3.6',
+82 verbose parsed url   path: 'socket.io-client@1.3.6',
+82 verbose parsed url   href: 'socket.io-client@1.3.6' }
+83 verbose cache add [ 'socket.io-adapter@0.3.1', null ]
+84 verbose cache add name=undefined spec="socket.io-adapter@0.3.1" args=["socket.io-adapter@0.3.1",null]
+85 verbose parsed url { protocol: null,
+85 verbose parsed url   slashes: null,
+85 verbose parsed url   auth: null,
+85 verbose parsed url   host: null,
+85 verbose parsed url   port: null,
+85 verbose parsed url   hostname: null,
+85 verbose parsed url   hash: null,
+85 verbose parsed url   search: null,
+85 verbose parsed url   query: null,
+85 verbose parsed url   pathname: 'socket.io-adapter@0.3.1',
+85 verbose parsed url   path: 'socket.io-adapter@0.3.1',
+85 verbose parsed url   href: 'socket.io-adapter@0.3.1' }
+86 verbose cache add name="socket.io-parser" spec="2.2.4" args=["socket.io-parser","2.2.4"]
+87 verbose parsed url { protocol: null,
+87 verbose parsed url   slashes: null,
+87 verbose parsed url   auth: null,
+87 verbose parsed url   host: null,
+87 verbose parsed url   port: null,
+87 verbose parsed url   hostname: null,
+87 verbose parsed url   hash: null,
+87 verbose parsed url   search: null,
+87 verbose parsed url   query: null,
+87 verbose parsed url   pathname: '2.2.4',
+87 verbose parsed url   path: '2.2.4',
+87 verbose parsed url   href: '2.2.4' }
+88 verbose addNamed [ 'socket.io-parser', '2.2.4' ]
+89 verbose addNamed [ '2.2.4', '2.2.4' ]
+90 silly lockFile c32635b4-socket-io-parser-2-2-4 socket.io-parser@2.2.4
+91 verbose lock socket.io-parser@2.2.4 /Users/joduplessis/.npm/c32635b4-socket-io-parser-2-2-4.lock
+92 verbose cache add name="socket.io-client" spec="1.3.6" args=["socket.io-client","1.3.6"]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: '1.3.6',
+93 verbose parsed url   path: '1.3.6',
+93 verbose parsed url   href: '1.3.6' }
+94 verbose addNamed [ 'socket.io-client', '1.3.6' ]
+95 verbose addNamed [ '1.3.6', '1.3.6' ]
+96 silly lockFile 0ae631a4-socket-io-client-1-3-6 socket.io-client@1.3.6
+97 verbose lock socket.io-client@1.3.6 /Users/joduplessis/.npm/0ae631a4-socket-io-client-1-3-6.lock
+98 verbose cache add [ 'has-binary-data@0.1.3', null ]
+99 verbose cache add name=undefined spec="has-binary-data@0.1.3" args=["has-binary-data@0.1.3",null]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: 'has-binary-data@0.1.3',
+100 verbose parsed url   path: 'has-binary-data@0.1.3',
+100 verbose parsed url   href: 'has-binary-data@0.1.3' }
+101 verbose cache add [ 'debug@2.1.0', null ]
+102 verbose cache add name=undefined spec="debug@2.1.0" args=["debug@2.1.0",null]
+103 verbose parsed url { protocol: null,
+103 verbose parsed url   slashes: null,
+103 verbose parsed url   auth: null,
+103 verbose parsed url   host: null,
+103 verbose parsed url   port: null,
+103 verbose parsed url   hostname: null,
+103 verbose parsed url   hash: null,
+103 verbose parsed url   search: null,
+103 verbose parsed url   query: null,
+103 verbose parsed url   pathname: 'debug@2.1.0',
+103 verbose parsed url   path: 'debug@2.1.0',
+103 verbose parsed url   href: 'debug@2.1.0' }
+104 verbose cache add name="socket.io-adapter" spec="0.3.1" args=["socket.io-adapter","0.3.1"]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: '0.3.1',
+105 verbose parsed url   path: '0.3.1',
+105 verbose parsed url   href: '0.3.1' }
+106 verbose addNamed [ 'socket.io-adapter', '0.3.1' ]
+107 verbose addNamed [ '0.3.1', '0.3.1' ]
+108 silly lockFile 55b0198c-socket-io-adapter-0-3-1 socket.io-adapter@0.3.1
+109 verbose lock socket.io-adapter@0.3.1 /Users/joduplessis/.npm/55b0198c-socket-io-adapter-0-3-1.lock
+110 verbose cache add name="has-binary-data" spec="0.1.3" args=["has-binary-data","0.1.3"]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: '0.1.3',
+111 verbose parsed url   path: '0.1.3',
+111 verbose parsed url   href: '0.1.3' }
+112 verbose addNamed [ 'has-binary-data', '0.1.3' ]
+113 verbose addNamed [ '0.1.3', '0.1.3' ]
+114 silly lockFile f0f0db2a-has-binary-data-0-1-3 has-binary-data@0.1.3
+115 verbose lock has-binary-data@0.1.3 /Users/joduplessis/.npm/f0f0db2a-has-binary-data-0-1-3.lock
+116 verbose cache add name="debug" spec="2.1.0" args=["debug","2.1.0"]
+117 verbose parsed url { protocol: null,
+117 verbose parsed url   slashes: null,
+117 verbose parsed url   auth: null,
+117 verbose parsed url   host: null,
+117 verbose parsed url   port: null,
+117 verbose parsed url   hostname: null,
+117 verbose parsed url   hash: null,
+117 verbose parsed url   search: null,
+117 verbose parsed url   query: null,
+117 verbose parsed url   pathname: '2.1.0',
+117 verbose parsed url   path: '2.1.0',
+117 verbose parsed url   href: '2.1.0' }
+118 verbose addNamed [ 'debug', '2.1.0' ]
+119 verbose addNamed [ '2.1.0', '2.1.0' ]
+120 silly lockFile ecfe62ac-debug-2-1-0 debug@2.1.0
+121 verbose lock debug@2.1.0 /Users/joduplessis/.npm/ecfe62ac-debug-2-1-0.lock
+122 verbose request where is /socket.io-parser
+123 verbose request registry https://registry.npmjs.org/
+124 verbose url raw /socket.io-parser
+125 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-parser' ]
+126 verbose url resolved https://registry.npmjs.org/socket.io-parser
+127 verbose request where is https://registry.npmjs.org/socket.io-parser
+128 info trying registry request attempt 1 at 10:03:23
+129 verbose etag "29GTYIWKB5WJTF3G582OX8YFT"
+130 http GET https://registry.npmjs.org/socket.io-parser
+131 verbose request where is /engine.io
+132 verbose request registry https://registry.npmjs.org/
+133 verbose url raw /engine.io
+134 verbose url resolving [ 'https://registry.npmjs.org/', './engine.io' ]
+135 verbose url resolved https://registry.npmjs.org/engine.io
+136 verbose request where is https://registry.npmjs.org/engine.io
+137 info trying registry request attempt 1 at 10:03:23
+138 verbose etag "CYLMIB60FMHCNXED7QHXSD98H"
+139 http GET https://registry.npmjs.org/engine.io
+140 verbose request where is /has-binary-data
+141 verbose request registry https://registry.npmjs.org/
+142 verbose url raw /has-binary-data
+143 verbose url resolving [ 'https://registry.npmjs.org/', './has-binary-data' ]
+144 verbose url resolved https://registry.npmjs.org/has-binary-data
+145 verbose request where is https://registry.npmjs.org/has-binary-data
+146 info trying registry request attempt 1 at 10:03:23
+147 verbose etag "M275UQ94774EDC5E41QTVC3Z"
+148 http GET https://registry.npmjs.org/has-binary-data
+149 verbose request where is /socket.io-adapter
+150 verbose request registry https://registry.npmjs.org/
+151 verbose url raw /socket.io-adapter
+152 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-adapter' ]
+153 verbose url resolved https://registry.npmjs.org/socket.io-adapter
+154 verbose request where is https://registry.npmjs.org/socket.io-adapter
+155 info trying registry request attempt 1 at 10:03:23
+156 verbose etag "4INI5WACPMN37XXZ6J3OKZKRP"
+157 http GET https://registry.npmjs.org/socket.io-adapter
+158 verbose request where is /socket.io-client
+159 verbose request registry https://registry.npmjs.org/
+160 verbose url raw /socket.io-client
+161 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-client' ]
+162 verbose url resolved https://registry.npmjs.org/socket.io-client
+163 verbose request where is https://registry.npmjs.org/socket.io-client
+164 info trying registry request attempt 1 at 10:03:23
+165 verbose etag "BON59QGE0UV97QFCOK7Y8N7AF"
+166 http GET https://registry.npmjs.org/socket.io-client
+167 verbose request where is /debug
+168 verbose request registry https://registry.npmjs.org/
+169 verbose url raw /debug
+170 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+171 verbose url resolved https://registry.npmjs.org/debug
+172 verbose request where is https://registry.npmjs.org/debug
+173 info trying registry request attempt 1 at 10:03:23
+174 verbose etag "BQA8S6UJ3UYSRV68YMXQF0K3L"
+175 http GET https://registry.npmjs.org/debug
+176 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+177 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+178 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+179 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+180 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+181 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+182 info trying registry request attempt 2 at 10:03:33
+183 verbose etag "M275UQ94774EDC5E41QTVC3Z"
+184 http GET https://registry.npmjs.org/has-binary-data
+185 info trying registry request attempt 2 at 10:03:33
+186 verbose etag "4INI5WACPMN37XXZ6J3OKZKRP"
+187 http GET https://registry.npmjs.org/socket.io-adapter
+188 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+189 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+190 info trying registry request attempt 2 at 10:03:33
+191 verbose etag "CYLMIB60FMHCNXED7QHXSD98H"
+192 http GET https://registry.npmjs.org/engine.io
+193 info trying registry request attempt 2 at 10:03:33
+194 verbose etag "29GTYIWKB5WJTF3G582OX8YFT"
+195 http GET https://registry.npmjs.org/socket.io-parser
+196 info trying registry request attempt 2 at 10:03:33
+197 verbose etag "BON59QGE0UV97QFCOK7Y8N7AF"
+198 http GET https://registry.npmjs.org/socket.io-client
+199 info trying registry request attempt 2 at 10:03:33
+200 verbose etag "BQA8S6UJ3UYSRV68YMXQF0K3L"
+201 http GET https://registry.npmjs.org/debug
+202 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+203 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+204 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+205 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+206 info trying registry request attempt 3 at 10:04:33
+207 verbose etag "4INI5WACPMN37XXZ6J3OKZKRP"
+208 http GET https://registry.npmjs.org/socket.io-adapter
+209 info trying registry request attempt 3 at 10:04:33
+210 verbose etag "M275UQ94774EDC5E41QTVC3Z"
+211 http GET https://registry.npmjs.org/has-binary-data
+212 silly registry.get cb [ 304, undefined ]
+213 verbose etag https://registry.npmjs.org/socket.io-adapter from cache
+214 silly registry.get cb [ 304, undefined ]
+215 verbose etag https://registry.npmjs.org/has-binary-data from cache
+216 info trying registry request attempt 3 at 10:04:33
+217 verbose etag "CYLMIB60FMHCNXED7QHXSD98H"
+218 http GET https://registry.npmjs.org/engine.io
+219 info trying registry request attempt 3 at 10:04:33
+220 verbose etag "29GTYIWKB5WJTF3G582OX8YFT"
+221 http GET https://registry.npmjs.org/socket.io-parser
+222 info trying registry request attempt 3 at 10:04:33
+223 verbose etag "BON59QGE0UV97QFCOK7Y8N7AF"
+224 http GET https://registry.npmjs.org/socket.io-client
+225 info trying registry request attempt 3 at 10:04:33
+226 verbose etag "BQA8S6UJ3UYSRV68YMXQF0K3L"
+227 http GET https://registry.npmjs.org/debug
+228 silly registry.get cb [ 304, undefined ]
+229 verbose etag https://registry.npmjs.org/engine.io from cache
+230 silly registry.get cb [ 304, undefined ]
+231 verbose etag https://registry.npmjs.org/socket.io-parser from cache
+232 silly registry.get cb [ 304, undefined ]
+233 verbose etag https://registry.npmjs.org/socket.io-client from cache
+234 silly registry.get cb [ 304, undefined ]
+235 verbose etag https://registry.npmjs.org/debug from cache
+236 silly lockFile 55b0198c-socket-io-adapter-0-3-1 socket.io-adapter@0.3.1
+237 silly lockFile 55b0198c-socket-io-adapter-0-3-1 socket.io-adapter@0.3.1
+238 verbose about to build /usr/local/lib/node_modules/socket.io
+239 verbose lib/node_modules/socket.io unbuild
+240 info preuninstall socket.io@1.3.6
+241 silly lockFile 60feb9f1-engine-io-1-5-2 engine.io@1.5.2
+242 silly lockFile 60feb9f1-engine-io-1-5-2 engine.io@1.5.2
+243 silly lockFile fc457f6f-y-data-has-binary-data-0-1-3-tgz https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+244 verbose lock https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz /Users/joduplessis/.npm/fc457f6f-y-data-has-binary-data-0-1-3-tgz.lock
+245 silly lockFile 0ae631a4-socket-io-client-1-3-6 socket.io-client@1.3.6
+246 silly lockFile 0ae631a4-socket-io-client-1-3-6 socket.io-client@1.3.6
+247 silly lockFile c32635b4-socket-io-parser-2-2-4 socket.io-parser@2.2.4
+248 silly lockFile c32635b4-socket-io-parser-2-2-4 socket.io-parser@2.2.4
+249 info uninstall socket.io@1.3.6
+250 silly lockFile 59675b41--npmjs-org-debug-debug-2-1-0-tgz https://registry.npmjs.org/debug/-/debug-2.1.0.tgz
+251 verbose lock https://registry.npmjs.org/debug/-/debug-2.1.0.tgz /Users/joduplessis/.npm/59675b41--npmjs-org-debug-debug-2-1-0-tgz.lock
+252 verbose addRemoteTarball [ 'https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz',
+252 verbose addRemoteTarball   '8ebb18388b57f19a5231275a16fc18d51f379aae' ]
+253 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild socket.io@1.3.6
+254 info postuninstall socket.io@1.3.6
+255 verbose addRemoteTarball [ 'https://registry.npmjs.org/debug/-/debug-2.1.0.tgz',
+255 verbose addRemoteTarball   '33ab915659d8c2cc8a41443d94d6ebd37697ed21' ]
+256 info retry fetch attempt 1 at 10:04:33
+257 verbose fetch to= /tmp/npm-7485-92mgIFXu/registry.npmjs.org/debug/-/debug-2.1.0.tgz
+258 info retry fetch attempt 1 at 10:04:33
+259 verbose fetch to= /tmp/npm-7485-92mgIFXu/registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+260 http GET https://registry.npmjs.org/debug/-/debug-2.1.0.tgz
+261 http GET https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+262 error fetch failed https://registry.npmjs.org/debug/-/debug-2.1.0.tgz
+263 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+264 error fetch failed https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+265 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+266 error Error: version not found: socket.io-adapter@0.3.1
+266 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:125:12
+266 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+266 error     at Object.oncomplete (fs.js:107:15)
+267 error If you need help, you may report this *entire* log,
+267 error including the npm and node versions, at:
+267 error     <http://github.com/npm/npm/issues>
+268 error System Darwin 15.0.0
+269 error command "node" "/usr/local/bin/npm" "install" "-g" "socket.io"
+270 error cwd /Users/joduplessis/Sites/Ping/snooze
+271 error node -v v0.10.30
+272 error npm -v 1.4.21
+273 verbose exit [ 1, true ]
